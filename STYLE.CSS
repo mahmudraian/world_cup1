@@ -1,0 +1,452 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700&display=swap');
+
+/* google font */
+
+
+
+
+/* common style */
+body {
+    font-family: 'Baloo Chettan 2', cursive;
+    margin: 0;
+}
+
+main {
+    width: 1150px;
+    margin: 3rem auto;
+}
+
+.btn {
+    background-color: rgb(4, 94, 4);
+    border: none;
+    padding: .8rem 1.5rem;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 7px;
+    transition: .5s;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.btn:hover {
+    background-color: #000;
+    cursor: pointer;
+    border: 1px groove rgba(255, 255, 255, 0.308);
+}
+
+/* common style ends */
+
+/* header section starts --------------*/
+.header-section {
+    display: flex;
+    background-color: #161616;
+    padding: 4rem;
+    border-radius: 10px;
+    background-image: url(world-cup-main/assets/Banner\ Image.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.header-img {
+    display: none;
+}
+
+.header-text {
+    width: 50%;
+    padding-top: 5rem;
+}
+
+
+.header-text h1 {
+    color: #fff;
+    font-size: 3.4em;
+    width: 70%;
+    margin: 0;
+}
+
+.header-text p {
+    color: #fff;
+    margin: 0;
+    padding-bottom: 1rem;
+    width: 70%;
+}
+
+
+.matches {
+    padding-top: 5rem;
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 5rem;
+}
+
+.match-menu {
+    width: 22%;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 1.2rem;
+    padding: 2rem;
+    height: 28vh;
+}
+
+
+
+
+.match-menu a {
+    padding: 13px 60px;
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    width: 135px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.menu-current {
+    background-color: green !important;
+    color: #fff !important;
+}
+
+.menu-inactive:active {
+    background-color: green;
+    color: #fff;
+}
+
+
+
+.match-schedule {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.match-details {
+    border: 1px solid #74747456;
+    padding: 1rem;
+    border-radius: 7px;
+}
+
+.match-team {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.match-team h2 {
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 1px;
+}
+
+.ger img,
+.france img {
+    width: 90%;
+}
+
+.match-info h4,
+.match-info p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* blog  start -=======*/
+
+.match-summary {
+    display: flex;
+    gap: 30px;
+}
+
+.match-info-btn {
+    margin: 5px;
+    padding: 5px 25px;
+    font-weight: 600;
+}
+
+.time,
+.comments {
+    display: flex;
+    gap: 10px;
+}
+
+.match-info-blog h4 {
+    font-size: 16px;
+    margin: 5px;
+    color: #161616;
+}
+
+.player-photo img {
+    width: 100%;
+}
+
+.button-bottom {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+
+
+
+
+footer {
+    background-color: #000;
+    padding: 5rem;
+}
+
+.footer-title {
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+}
+
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem;
+    justify-content: center;
+}
+
+
+.hr {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.507);
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.footer-icon {
+    padding: 2rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 28px;
+    color: #000;
+    background-color: #FFF;
+    border: 1px solid #000;
+    padding-top: 12px;
+    border-radius: 22px;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -o-border-radius: 22px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.social-icon:hover {
+    color: #ffffff;
+    background-color: #000;
+    border: 1px solid rgba(136, 128, 128, 0.295);
+    cursor: pointer;
+}
+
+
+
+/* footer end */
+
+
+
+
+/* =================media queries */
+
+
+
+/* tablet devices */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    main {
+        width: 650px;
+        margin: 3rem auto;
+    }
+
+    .header-section {
+        padding: 3rem;
+        background-size: contain;
+    }
+
+
+
+    .header-text {
+        width: 100%;
+        padding-top: 0;
+    }
+
+
+    .header-text h1 {
+        font-size: 2em;
+        width: 50%;
+    }
+
+    p.p-banner {
+        display: block !important;
+    }
+
+    .header-text p {
+        color: #fff;
+        margin: 0;
+        padding-bottom: 1rem;
+        width: 50%;
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+    .match-schedule {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .matches {
+        flex-direction: column;
+
+    }
+
+    .match-menu {
+        width: 100%;
+        background-color: #fff;
+        flex-direction: row;
+        border-radius: 10px;
+        padding: 10px;
+        height: 5vh;
+
+    }
+
+    .button-bottom {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .match-menu a {
+        border: 1px solid rgba(151, 150, 150, 0.26);
+        padding: 10px 20px;
+        color: #000;
+        background-color: #fff;
+        font-size: 17px;
+    }
+
+    .footer-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+
+
+}
+
+p.p-banner {
+    display: none;
+}
+
+/* tablet devices end */
+
+
+/* mobile devices -=-=-=-=-=-=-=-==-=-=-==--=--=*/
+
+@media only screen and (max-width: 688px) {
+    main {
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+    .header-section {
+        padding: 2rem 4rem;
+        flex-direction: column;
+        display: flex;
+        background-color: #161616;
+        background-image: url(world-cup-main/assets/Banner\ Image.pngcl);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: bottom;
+    }
+
+    .header-img {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        height: 30vh;
+    }
+
+
+    .header-text {
+        width: 100%;
+        padding-top: 0rem;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 23px;
+        width: 70%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-text p {
+        width: 100%;
+        font-size: 13px;
+        color: #fff;
+        margin: 0;
+        padding-bottom: 1rem;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .matches {
+        flex-direction: column;
+    }
+
+    .match-menu {
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
+        height: 20vh;
+        margin-bottom: 2rem;
+    }
+
+    .match-menu a {
+        border: 1px solid rgba(151, 150, 150, 0.26);
+        padding: 10px 20px;
+        color: #000;
+        background-color: #fff;
+    }
+
+    .match-schedule {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .match-team {
+        justify-content: center;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+}
+
+/* mobile devices end------------------------------- */
+
+
+/* =================media queries */
